@@ -1,0 +1,251 @@
+/* Page styles */
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*h2 {
+	font-family:arial; 
+  color:#afbdcf; 
+  text-transform:uppercase; 
+  font-size:16px; 
+  font-weight:normal;
+  margin-bottom:20px;
+  width:500px; height:50px; background:#F1F2F4;  
+  position:absolute; top:0px; left:0px;margin: 0px;
+  padding: 18px;
+  text-align: center;
+}*/
+
+h2{
+  color:#28B6C8;
+  text-transform:uppercase;
+  text-align: center; 
+  font-size:20px; 
+  font-weight:bold;
+  position: relative;
+  right:14%;
+}
+
+
+#login{
+  padding-bottom: 8%;
+}
+
+body {
+  background: url(../images/app/books_background.jpg) no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Exo', sans-serif;
+}
+
+
+form {
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
+  width: 500px;
+  height: 641px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0% auto;
+  margin-left: 60%;
+  padding: 5px 0px 0px 100px;
+  /*outline: 5px solid rgba(0,0,0,0.1);*/
+  position:relative;
+}
+
+
+
+.login_form{
+  height: 450px;
+  margin: 100px auto;
+  margin-left: 60%;
+  padding: 70px 0px 0px 100px;
+}
+
+
+/* forgot password css */
+.forgot_password_form{
+  height: 270px;
+  padding: 30px 0px 0px 100px;
+  position: absolute;
+  top: 30%;
+  margin-left: 33%;
+}
+
+.forgot_password_form h2{
+  padding-bottom: 0%;
+}
+
+
+.account_activation_form{
+  height: 270px;
+  padding: 30px 0px 0px 100px;
+  position: absolute;
+  top: 30%;
+  margin-left: 33%;
+}
+
+.account_activation_form h2{
+  font-size: 13px;
+}
+
+
+.add_new_password_form{
+  height: 280px;
+  padding: 30px 0px 0px 100px;
+  position: absolute;
+  top: 30%;
+  margin-left: 33%;
+}
+
+
+/* Input form Style */
+
+
+
+input{
+  border: 2px solid #8CA1D6 ;
+  border-radius: 5px;
+  height: 35px;
+  width:300px;
+  color: #28B6C8 ;
+  font-weight:bold;
+  background: transparent;
+  font-size: 14px;
+  padding-left: 20px;
+  box-shadow: none; 
+  /* border-radius: 15px; */
+}
+
+select, option{
+	border: 2px solid #8CA1D6 ;
+  border-radius: 5px;
+  height: 35px;
+  width:300px;
+  color: #28B6C8;
+  background-color:#102242;
+  font-size: 14px;
+  padding-left: 20px;
+  box-shadow: none;
+}
+
+input[type=submit]{
+  border-radius: 15px;
+  padding-left: 0px;
+}
+
+input[type=submit]:hover{
+  background-color:#1D78E3;
+  color:white;
+  cursor: pointer;
+}
+
+input[type="date" i]{
+  padding-inline-start: 7px;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.input_wrap span{
+	color: red;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.login_form input, .login_form select, option {
+	height: 43px;
+}
+
+/* Label style after Input field is in focus. Can also use input:focus ~ label to select sibling. */
+
+input:focus + label, input.has-content + label{
+  font-size: 10px;
+  color: #000;
+  top: -5px;
+  left:10px;
+  background: #28B6C8;
+  border-radius: 3px;
+  padding: 0px 5px 0px 5px;
+}
+
+.input_wrap {
+  position:relative;
+}
+
+.single_input {
+  position:relative;
+}
+
+.input_wrap label {
+  font-size:13px;
+  color: #28B6C8;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  pointer-events: none;
+}
+
+.login_form label{
+	padding: 14px;
+}
+
+input:focus {
+  outline:none;
+  background-color:#102242;
+  border: 2px solid #28B6C8;
+}
+
+#userLogo{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -10%;
+right: 41%;
+}
+
+a{
+  text-decoration: none;
+  color: #1D78E3;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #28B6C8;
+  text-decoration: underline;
+}
+
+
+@-webkit-keyframes autofill {
+    0%,100% {
+        color: #28B6C8;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}

@@ -1,0 +1,17 @@
+.slidet1,.slidet2,.slidet3,.slidet4,.slidet5{
+display: none;
+
+}
+
+body{
+	background-color: #183d59; 
+}
+
+div{
+	background-color: #183d59;
+}
+
+img{
+	position: relative;
+}
+
